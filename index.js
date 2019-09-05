@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 let base_url = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
-const api_key = '&key=AIzaSyDRW1vea8xAhj40t9lHQZLotVt34s7WU6g';
+const api_key = process.env.api_key;
 
 
 exports.handler = (event, context, callback) => {
